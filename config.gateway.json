@@ -1,0 +1,22 @@
+{
+        "firewall": {
+                "modify": {
+                        "LOAD_BALANCE": {
+                                "description": "LOAD_BALANCE",
+                                "rule": {
+                                        "2501": {
+                                                "action": "modify",
+                                                "modify": {
+                                                        "table": "5"
+                                                },
+                                                "protocol": "all",
+                                                "source": {
+                                                        "address": "10.200.100.0/24"
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+        }
+}
